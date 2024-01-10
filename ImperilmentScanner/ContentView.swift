@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var dataScannerManager: DataScannerManager = DataScannerManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        DataScannerView(dataScannerManager: dataScannerManager)
+            .aspectRatio(1, contentMode: .fit)
+        .onTapGesture(perform: {
+            if !dataScannerManager.recognisedText.isEmpty {
+                dataScannerManager.recognisedText.removeAll()
+            }
+        })
+        .overlay(alignment: .bottomLeading, content: {
+            if !dataScannerManager.recognisedText.isEmpty {
+                ZStack {
+                    VStack {
+                        Text("Count: \(dataScannerManager.recognisedText.count)")
+                        let sorted = dataScannerManager.recognisedText.sorted(by: { $0.value < $1.value })
+                        ForEach(sorted, id: \.key) { key, value in
+                            Text(value)
+                        }
+                    }
+                    .padding(.leading, 16)
+                }
+//                    .frame(height: 300)
+            }
+        })
     }
 }
 

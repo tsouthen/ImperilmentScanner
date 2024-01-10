@@ -11,6 +11,10 @@
 		5FF2B9BB298A1A1B0055D1D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2B9BA298A1A1B0055D1D0 /* ContentView.swift */; };
 		5FF2B9BD298A1A1C0055D1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF2B9BC298A1A1C0055D1D0 /* Assets.xcassets */; };
 		5FF2B9C0298A1A1C0055D1D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF2B9BF298A1A1C0055D1D0 /* Preview Assets.xcassets */; };
+		5FF2B9CA298A1A700055D1D0 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2B9C6298A1A700055D1D0 /* DataScannerView.swift */; };
+		5FF2B9CB298A1A700055D1D0 /* VideoSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2B9C7298A1A700055D1D0 /* VideoSessionController.swift */; };
+		5FF2B9CC298A1A700055D1D0 /* DataScannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2B9C8298A1A700055D1D0 /* DataScannerManager.swift */; };
+		5FF2B9CD298A1A700055D1D0 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2B9C9298A1A700055D1D0 /* BarcodeScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		5FF2B9BA298A1A1B0055D1D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FF2B9BC298A1A1C0055D1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF2B9BF298A1A1C0055D1D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FF2B9C6298A1A700055D1D0 /* DataScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		5FF2B9C7298A1A700055D1D0 /* VideoSessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSessionController.swift; sourceTree = "<group>"; };
+		5FF2B9C8298A1A700055D1D0 /* DataScannerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataScannerManager.swift; sourceTree = "<group>"; };
+		5FF2B9C9298A1A700055D1D0 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				5FF2B9B8298A1A1B0055D1D0 /* ImperilmentScannerApp.swift */,
 				5FF2B9BA298A1A1B0055D1D0 /* ContentView.swift */,
+				5FF2B9C9298A1A700055D1D0 /* BarcodeScannerView.swift */,
+				5FF2B9C8298A1A700055D1D0 /* DataScannerManager.swift */,
+				5FF2B9C6298A1A700055D1D0 /* DataScannerView.swift */,
+				5FF2B9C7298A1A700055D1D0 /* VideoSessionController.swift */,
 				5FF2B9BC298A1A1C0055D1D0 /* Assets.xcassets */,
 				5FF2B9BE298A1A1C0055D1D0 /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF2B9CD298A1A700055D1D0 /* BarcodeScannerView.swift in Sources */,
 				5FF2B9BB298A1A1B0055D1D0 /* ContentView.swift in Sources */,
+				5FF2B9CA298A1A700055D1D0 /* DataScannerView.swift in Sources */,
+				5FF2B9CB298A1A700055D1D0 /* VideoSessionController.swift in Sources */,
+				5FF2B9CC298A1A700055D1D0 /* DataScannerManager.swift in Sources */,
 				5FF2B9B9298A1A1B0055D1D0 /* ImperilmentScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
